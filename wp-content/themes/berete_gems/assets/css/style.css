@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-Medium.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-Italic.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-Bold.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-Regular.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-MediumItalic.woff2") format("woff2"), url("../fonts/dmsans/DMSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmsans";
+  src: url("../fonts/dmsans/DMSans-BoldItalic.woff2") format("woff2"), url("../fonts/dmsans/DMSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dou";
+  src: url("../fonts/dou/DoulosSIL.woff2") format("woff2"), url("../fonts/dou/DoulosSIL.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/*======================================== config =================================*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s all !important;
+}
+a:hover {
+  color: #0B4499;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+html {
+  overflow-x: hidden;
+}
+html.open_menu {
+  overflow: hidden;
+}
+
+body {
+  max-width: 100%;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "dmsans";
+  font-weight: normal;
+  background: url("../images/main.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  max-width: 1330px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none !important;
+}
+
+/*======================================== end config =================================*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  padding: 30px 0;
+}
+
+.content-menu {
+  font-size: 15px;
+  font-weight: bold;
+}
+.content-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-menu ul li {
+  margin-right: 60px;
+}
+.content-menu ul li:last-child {
+  margin-right: 0;
+}
+.content-menu ul li a {
+  color: #d3ad63;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+.title h2 {
+  font-family: "dou";
+  font-size: 42px;
+}
+
+.link-detail a {
+  color: #d3ad63;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.link-detail a img {
+  margin-left: 24px;
+}
+
+.box-bannner {
+  position: relative;
+}
+.box-bannner .avarta-banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.box-bannner .btn-scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 60px 0;
+}
+
+.caption-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caption-banner .link-banner {
+  margin-top: 40px;
+}
+.caption-banner .link-banner a {
+  color: #d3ad63;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.caption-banner .link-banner a img {
+  margin-left: 24px;
+}
+.caption-banner h1 {
+  font-family: "dou";
+  font-size: 60px;
+}
+
+.box-about {
+  background: #141414;
+}
+.box-about .content-about {
+  display: flex;
+  align-items: center;
+}
+.box-about .content-about > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.box-budget {
+  padding: 150px 0 0 0;
+}
+
+.content-budget {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.content-budget p {
+  margin-bottom: 30px;
+}
+.content-budget p:last-child {
+  margin-bottom: 0;
+}
+
+.box-discover {
+  padding: 220px 0;
+}
+.box-discover .row {
+  margin: 0;
+}
+.box-discover .row > div {
+  padding: 0;
+}
+.box-discover .link-detail {
+  margin-top: 40px;
+}
+.box-discover .link-detail a {
+  margin: 0px;
+  display: inline-block;
+}
+.box-discover .link-detail a span {
+  display: block;
+}
+.box-discover .link-detail a img {
+  margin: 5px 0 0 0;
+}
+
+.box-payment {
+  background: #141414;
+}
+
+.content-payment {
+  display: flex;
+  align-items: center;
+}
+.content-payment > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.box-form {
+  padding: 200px 0;
+}
+.box-form .title {
+  margin-bottom: 35px;
+}
+.box-form .desc-form {
+  margin-bottom: 22px;
+}
+
+.touch-form {
+  text-transform: uppercase;
+  color: #d3ad63;
+  margin-bottom: 60px;
+}
+
+.frm-content {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+}
+.frm-content .item {
+  margin-bottom: 15px;
+}
+.frm-content .item:last-child {
+  margin-bottom: 0;
+}
+.frm-content select {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #5a5a5a;
+  border-bottom: 1px solid #5a5a5a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.frm-content .item-file {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 30px 0;
+}
+.frm-content .item-file .inp_file {
+  display: none;
+}
+.frm-content .item-file label {
+  margin-top: 6px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+.frm-content .item-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.frm-content .item-btn:after {
+  content: url(../images/arrow-right.png);
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 40px;
+}
+.frm-content .item-btn .btn_field {
+  color: #d3ad63;
+  border: 2px solid #d3ad63;
+  cursor: pointer;
+  height: 70px;
+  background: transparent;
+  width: 320px;
+  border-radius: 70px;
+  padding: 0 40px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s all !important;
+}
+.frm-content .item-btn .btn_field:hover {
+  color: #fff;
+  background: #d3ad63;
+}
+
+.box-about {
+  padding: 150px 0;
+}
+.box-about .row {
+  margin: 0;
+}
+.box-about .row > div {
+  padding: 0;
+}
+
+.item-about {
+  margin-bottom: 150px;
+}
+.item-about:last-child {
+  margin-bottom: 0;
+}
+.item-about:nth-child(2n) .col-md-6:first-child {
+  order: 2;
+}
+.item-about:nth-child(2n) .col-md-6:last-child {
+  order: 1;
+}
+.item-about:nth-child(2n) .txt-about {
+  padding: 0 80px 0 0;
+}
+.item-about .txt-about {
+  padding-left: 80px;
+}
+.item-about .txt-about h3 {
+  font-size: 42px;
+  font-family: "dou";
+}
+.item-about .desc {
+  padding: 30px 0;
+}
+.item-about .desc p {
+  margin-bottom: 20px;
+}
+.item-about .desc p:last-child {
+  margin-bottom: 0;
+}
+.item-about .desc ul {
+  padding: 0 0 18px 0;
+  margin-bottom: 15px;
+}
+
+.banner-about {
+  padding: 250px 0 100px 0;
+}
+
+.desc-banner {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+.desc-banner p {
+  margin-bottom: 20px;
+}
+.desc-banner p:last-child {
+  margin-bottom: 0;
+}
+
+.loadmore-case {
+  padding: 150px 0 200px 0;
+}
+.loadmore-case a {
+  color: #d3ad63;
+  border: 2px solid #d3ad63;
+  border-radius: 70px;
+  height: 70px;
+  width: 410px;
+  padding: 0 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-case .content-payment:nth-child(2n) .left {
+  order: 2;
+}
+.list-case .content-payment:nth-child(2n) .right {
+  order: 1;
+}
+
+.caption-contact p {
+  margin-bottom: 0;
+}
+
+.box-contact-cate {
+  background: #000000;
+  padding: 100px 0;
+}
+.box-contact-cate .frm-content {
+  max-width: 100%;
+  text-align: left;
+}
+.box-contact-cate .frm-content select {
+  text-align: left;
+}
+.box-contact-cate .frm-content .item-file {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.box-contact-cate .frm-content .item-file label {
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.txt-contact .item-contact {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.txt-contact .item-contact:last-child {
+  margin-bottom: 0;
+}
+.txt-contact .item-contact .t-contact {
+  font-family: "dou";
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.txt-contact .item-contact ul {
+  list-style: none;
+}
+.txt-contact .item-contact ul li {
+  margin-bottom: 4px;
+}
+.txt-contact .item-contact ul li:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
