@@ -49,16 +49,16 @@ get_header();  ?>
             </div>
             <div class="list-gems">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3 col-6">
                         <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-1.png" class="img-fluid w-100" alt=""></a></div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3 col-6">
                         <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-2.png" class="img-fluid w-100" alt=""></a></div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3 col-6">
                         <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-3.png" class="img-fluid w-100" alt=""></a></div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3 col-6">
                         <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-4.png" class="img-fluid w-100" alt=""></a></div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ get_header();  ?>
     <section class="box-contact-cate">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-5">
                     <div class="txt-contact">
                         <div class="item-contact">
                             <div class="t-contact"><span>Address</span></div>
@@ -34,14 +34,14 @@ get_header();  ?>
                             </ul>
                         </div>
                         <div class="item-contact">
-                            <div class="t-contact"><span>phone</span></div>
+                            <div class="t-contact"><span>Phone</span></div>
                             <ul>
                                 <li><?php the_field('address') ?></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-7">
                     <div class="frm-content">
                         <div class="item">
                             <select name="" id="">

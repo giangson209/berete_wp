@@ -52,18 +52,15 @@ get_header();  ?>
             </div>
             <div class="list-gems">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-1.png" class="img-fluid w-100" alt=""></a></div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-2.png" class="img-fluid w-100" alt=""></a></div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-3.png" class="img-fluid w-100" alt=""></a></div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-gem"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/gem-4.png" class="img-fluid w-100" alt=""></a></div>
-                    </div>
+                    <?php 
+                        $images = get_field('list_gallery','option');
+                        if( $images ): ?>
+                                <?php foreach( $images as $image ): ?>
+                                    <div class="col-md-3 col-sm-3 col-6">
+                                        <div class="item-gem"><a href="<?php echo esc_url($image['url']); ?>"><img src="<?php echo esc_url($image['url']); ?>" class="img-fluid w-100" alt="<?php echo esc_attr($image['alt']); ?>"></a></div>
+                                    </div>
+                                <?php endforeach; ?>
+                        <?php endif; ?>
                 </div>
             </div>
             <div class="link-detail text-center"><a href="<?php the_field('link_discover') ?>"><span>SHOW MORE hiddacen gems</span> <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-down.png" class="img-fluid" alt=""></a></div>

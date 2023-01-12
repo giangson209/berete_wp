@@ -30,22 +30,35 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header class="d-none"> 
+<header> 
     <div class="header-top">
         <div class="container">
             <div class="content-menu">
                 <div class="row align-items-center">
                     <div class="col-md-3">
-                        <div class="logo"><a href=""><img src="images/logo.png" class="img-fluid" alt=""></a></div>
+                        <div class="logo"><a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/logo.png" class="img-fluid" alt=""></a></div>
                     </div>
                     <div class="col-md-9">
                         <div class="h-menu text-uppercase">
-                            <ul>
-                                <li><a href="">ABoUT US</a></li>
-                                <li><a href="">CASES</a></li>
-                                <li><a href="">How it works</a></li>
-                                <li><a href="">CONTACT</a></li>
-                            </ul>
+                            <div class="mm-menu">
+                                <!-- <ul>
+                                    <li><a href="/about">ABoUT US</a></li>
+                                    <li><a href="">CASES</a></li>
+                                    <li><a href="">How it works</a></li>
+                                    <li><a href="">CONTACT</a></li>
+                                </ul> -->
+                                <?php
+                                    wp_nav_menu(
+                                        array(
+                                            'theme_location' => 'Menu',
+                                            // 'menu_id'        => 'primary-menu', 
+                                        )
+                                    );
+                                ?> 
+                            </div>
+                            <div class="btn-menu">
+                                <a href="javascript:void(0)"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/cubic.png" class="img-fluid" alt="">menu</a>
+                            </div>
                         </div>
                     </div>
                 </div>

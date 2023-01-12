@@ -9,7 +9,7 @@ get_header();  ?>
                     <h1><?php the_field('title_banner') ?></h1>
 
                     <div class="desc-banner">
-                       <?php the_field('content_banner') ?>
+                       <?php the_field('content_banner') ?> 
                     </div>
                 </div>
             </div>
@@ -36,74 +36,6 @@ get_header();  ?>
                     </div> 
                 </div>
             <?php endwhile; ?>
-            <!-- <div class="content-payment">
-                <div class="left">
-                    <div class="avarta"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/about.jpg" class="img-fluid w-100" alt=""></div>
-                </div>
-                <div class="right">
-                    <div class="txt-payment">
-                        <div class="title">
-                            <h2><span>Case 1</span></h2>
-                        </div>
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="link-detail"><a href="">Get your unique piece of jewellery <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a></div>
-                    </div>
-                </div> 
-            </div>
-            <div class="content-payment">
-                <div class="left">
-                    <div class="avarta"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/about.jpg" class="img-fluid w-100" alt=""></div>
-                </div>
-                <div class="right">
-                    <div class="txt-payment">
-                        <div class="title">
-                            <h2><span>Case 2</span></h2>
-                        </div>
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="link-detail"><a href="">Get your unique piece of jewellery <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a></div>
-                    </div>
-                </div> 
-            </div>
-            <div class="content-payment">
-                <div class="left">
-                    <div class="avarta"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/about.jpg" class="img-fluid w-100" alt=""></div>
-                </div>
-                <div class="right">
-                    <div class="txt-payment">
-                        <div class="title">
-                            <h2><span>Case 3</span></h2>
-                        </div>
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="link-detail"><a href="">Get your unique piece of jewellery <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a></div>
-                    </div>
-                </div> 
-            </div>
-            <div class="content-payment">
-                <div class="left">
-                    <div class="avarta"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/about.jpg" class="img-fluid w-100" alt=""></div>
-                </div>
-                <div class="right">
-                    <div class="txt-payment">
-                        <div class="title">
-                            <h2><span>Case 4</span></h2>
-                        </div>
-                        <div class="desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="link-detail"><a href="">Get your unique piece of jewellery <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a></div>
-                    </div>
-                </div> 
-            </div> -->
         </div>
         <div class="loadmore-case text-center">
             <a href="">VIEW MORE CASES <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a>
