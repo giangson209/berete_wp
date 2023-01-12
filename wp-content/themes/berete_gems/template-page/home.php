@@ -36,7 +36,7 @@ get_header();  ?>
     </section>
     <section class="box-budget">
         <div class="container">
-            <div class="title text-center">
+            <div class="title text-center"> 
                 <h2><?php the_field('title_budget') ?></h2>
             </div>
             <div class="content-budget text-center">
@@ -57,13 +57,13 @@ get_header();  ?>
                         if( $images ): ?>
                                 <?php foreach( $images as $image ): ?>
                                     <div class="col-md-3 col-sm-3 col-6">
-                                        <div class="item-gem"><a href="<?php echo esc_url($image['url']); ?>"><img src="<?php echo esc_url($image['url']); ?>" class="img-fluid w-100" alt="<?php echo esc_attr($image['alt']); ?>"></a></div>
+                                        <div class="item-gem"><a href="<?php echo esc_url($image['url']); ?>" data-fancybox="gall-1"><img src="<?php echo esc_url($image['url']); ?>" class="img-fluid w-100" alt="<?php echo esc_attr($image['alt']); ?>"></a></div>
                                     </div>
                                 <?php endforeach; ?>
-                        <?php endif; ?>
+                        <?php endif; ?> 
                 </div>
             </div>
-            <div class="link-detail text-center"><a href="<?php the_field('link_discover') ?>"><span>SHOW MORE hiddacen gems</span> <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-down.png" class="img-fluid" alt=""></a></div>
+            <div class="link-detail text-center"><a href="javascript:void(0)" id="loadmore-discover"><span>SHOW MORE hiddacen gems</span> <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-down.png" class="img-fluid" alt=""></a></div>
         </div>
     </section>
     <section class="box-payment">
@@ -94,59 +94,7 @@ get_header();  ?>
                 <p>Well, we’re that somebody. We’re the experts so you don’t have to be one.</p>
             </div>
             <div class="touch-form text-center"><span>Let’s get in touch!</span></div>
-            <div class="frm-content">
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">SELECT YOUR BUDGET</option>
-                        <option value="">5</option>
-                        <option value="">10</option>
-                        <option value="">15</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">Choose your color</option>
-                        <option value="">White</option>
-                        <option value="">Green</option>
-                        <option value="">Pink</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">SELECT A SIZE</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">DATE OF DELIVERY</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">Where Will We Be Shipping Your Project?</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <div class="item-file">
-                        <p>Share some inspiration with us</p>
-                        <input type="file" class="inp_file" id="up_file"><label for="up_file" class="mb-0">UPLOAD PHOTO</label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-btn">
-                        <input type="submit" class="btn_field" value="SENT">
-                    </div>
-                </div>
-            </div>
+            <?= do_shortcode('[contact-form-7 id="152" title="Contact form"]'); ?>
         </div>
     </section>
 </main>

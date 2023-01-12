@@ -58,6 +58,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://channel.mediacdn.vn/Magazine/web20200701032610/js/fancybox.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/js/lib/slick.min.js"></script> 
 <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/js/private.js"></script>
 <?php wp_footer(); ?>

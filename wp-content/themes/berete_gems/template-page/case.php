@@ -38,7 +38,7 @@ get_header();  ?>
             <?php endwhile; ?>
         </div>
         <div class="loadmore-case text-center">
-            <a href="">VIEW MORE CASES <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a>
+            <a href="javascript:void(0)" id="loadmore-case">VIEW MORE CASES <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/arrow-right.png" class="img-fluid" alt=""></a>
         </div>
     </section>
     <section class="box-form">
@@ -51,59 +51,7 @@ get_header();  ?>
                 <p>Well, we’re that somebody. We’re the experts so you don’t have to be one.</p>
             </div>
             <div class="touch-form text-center"><span>Let’s get in touch!</span></div>
-            <div class="frm-content">
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">SELECT YOUR BUDGET</option>
-                        <option value="">5</option>
-                        <option value="">10</option>
-                        <option value="">15</option>
-                    </select>
-                </div> 
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">Choose your color</option>
-                        <option value="">White</option>
-                        <option value="">Green</option>
-                        <option value="">Pink</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">SELECT A SIZE</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">DATE OF DELIVERY</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <select name="" id="">
-                        <option value="">Where Will We Be Shipping Your Project?</option>
-                        <option value="">12</option>
-                        <option value="">14</option>
-                        <option value="">16</option>
-                    </select>
-                </div>
-                <div class="item">
-                    <div class="item-file">
-                        <p>Share some inspiration with us</p>
-                        <input type="file" class="inp_file" id="up_file"><label for="up_file" class="mb-0">UPLOAD PHOTO</label>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-btn">
-                        <input type="submit" class="btn_field" value="SENT">
-                    </div>
-                </div>
-            </div>
+            <?= do_shortcode('[contact-form-7 id="152" title="Contact form"]'); ?>
         </div>
     </section>
 </main>

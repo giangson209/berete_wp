@@ -36,22 +36,72 @@ $(document).ready(function(){
 		],
 	});
 
-	$('.tab-stories a').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('.tab-stories a').removeClass('active');
-		$('.tab-content').removeClass('active');
-
-		$(this).addClass('active');
-		$("#"+tab_id).addClass('active');
-	})
-
-	$('.btn-bar-mobile a').click(function(){
-		$('.h-menu').addClass('active');
+	$('.btn-menu a').click(function(){
+		$('.menu-tracking, html').addClass('open_menu');
 	})
 	$('.close-menu a').click(function(){
-		$('.h-menu').removeClass('active');
+		$('.menu-tracking, html').removeClass('open_menu');
 	})
 
-})
+
+	$('#up_file').change(function() {
+        var filepath = this.value;
+        var m = filepath.match(/([^\/\\]+)$/);
+        var filename = m[1];
+        $('.item-file label').html(filename);
+    });
+
+
+	$('.box-discover .row > div').hide();
+   	$('.box-discover .row > div').each(function(index,value) {
+     	if(index < 8) {
+       		$(this).show();
+     	}
+   	});
+  	if($('.box-discover .row > div:hidden').length) {
+    	$('#loadmore-discover').show();
+  	}
+  	if(!$('.box-discover .row > div:hidden').length) {
+      	$('#loadmore-discover').hide();
+    }
+    $('#loadmore-discover').on('click', function() {
+	    $('.box-discover .row > div:hidden').each(function(index, value) {
+	       if(index < 4) {
+	        	$(this).show();
+	       }
+	    });
+	    if(!$('.box-discover .row > div:hidden').length) {
+	     	$('#loadmore-discover').hide();
+	     	$('.link-detail').addClass('mt-0');
+	    }
+	});
+
+
+
+
+	$('.list-case .content-payment').hide();
+   	$('.list-case .content-payment').each(function(index,value) {
+     	if(index < 4) {
+       		$(this).show();
+     	}
+   	});
+  	if($('.list-case .content-payment:hidden').length) {
+    	$('#loadmore-discover').show();
+  	}
+  	if(!$('.list-case .content-payment:hidden').length) {
+      	$('#loadmore-case').hide();
+    }
+    $('#loadmore-case').on('click', function() {
+	    $('.list-case .content-payment:hidden').each(function(index, value) {
+	       if(index < 2) {
+	        	$(this).show();
+	       }
+	    });
+	    if(!$('.list-case .content-payment:hidden').length) {
+	     	$('#loadmore-case').hide();
+	     	$('.loadmore-case').hide();
+	    }
+	});
+
+}) 
 
